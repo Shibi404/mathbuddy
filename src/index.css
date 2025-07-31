@@ -24,7 +24,24 @@
   --shadow: rgba(0, 0, 0, 0.1);
 }
 
-body {
+/* Reset & Global Setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  color: var(--color-secondary);
+}
+
+html, body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
   background-color: var(--bg-light);
   color: var(--text-main);
 }
