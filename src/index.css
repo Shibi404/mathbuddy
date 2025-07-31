@@ -44,4 +44,5 @@ html, body {
   scroll-behavior: smooth;
   background-color: var(--bg-light);
   color: var(--text-main);
+  font-family: 'Nunito', sans-serif;  
 }
