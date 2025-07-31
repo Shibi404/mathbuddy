@@ -1,12 +1,9 @@
-# React + Vite
+# 🧠 MathBuddy – Visual Math Learning for Children with Autism
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MathBuddy is an interactive, responsive web application designed to help children with autism learn basic math concepts like **addition** and **subtraction** using **visual aids**, **engaging activities**, and **simple quizzes** tailored to their learning style.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧑‍🎓 Target Audience
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Children aged **4–8 years**, particularly those on the autism spectrum, who benefit from structured, visual, and engaging learning tools.
