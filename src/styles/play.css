@@ -1,0 +1,86 @@
+.play-page {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+
+.items-area {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.fruit {
+  cursor: grab;
+  font-size: 2rem;
+  padding: 0.5rem;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  background-color: #fdf6e3;
+  transition: transform 0.2s;
+}
+
+.fruit:hover {
+  transform: scale(1.2);
+}
+
+.basket-area {
+  border: 3px dashed #d08;
+  border-radius: 1rem;
+  padding: 2rem;
+  min-height: 100px;
+  background-color: #fff6fa;
+  transition: background-color 0.3s;
+}
+
+.basket-area.hovering {
+  background-color: #ffe3f0;
+}
+
+.result {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.reset-btn {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: var(--accent-green);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reset-btn:hover {
+  background-color: var(--accent-yellow);
+}
+
+.target {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.feedback {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.success {
+  color: green;
+}
+
+.fail {
+  color: red;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
