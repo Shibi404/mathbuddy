@@ -12,7 +12,6 @@
   display: flex;
   justify-content: center;
   gap: 1rem;
-  flex-wrap: wrap;
 }
 
 .option-btn {
@@ -71,7 +70,18 @@
 }
 
 .final-score {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: green;
   margin-bottom: 1rem;
+}
+
+.question-number {
+  font-size: 1.2rem;
+  color: var(--primary-dark);
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.msg {
+  font-size: 1.2rem;
 }
