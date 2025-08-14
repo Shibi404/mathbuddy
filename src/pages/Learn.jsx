@@ -1,9 +1,18 @@
 import '../styles/Learn.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Learn() {
   const [addCount, setAddCount] = useState(0);
   const [subCount, setSubCount] = useState(5); // start from 5 for subtraction
+
+  useEffect(() => {
+  const handleKeyPress = (e) => {
+    if (e.key === "a") setAddCount(addCount + 1);
+    if (e.key === "s" && subCount > 0) setSubCount(subCount - 1);
+  };
+    window.addEventListener("keydown", handleKeyPress);
+    return () => window.removeEventListener("keydown", handleKeyPress);
+  }, [addCount, subCount]);
 
   return (
     <div className="learn">
