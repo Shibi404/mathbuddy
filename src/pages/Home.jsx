@@ -1,14 +1,17 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; // Routing concept
 import '../styles/Home.css';
 
 export default function Home() {
   return (
     <>
+      {/* Home Header Section */}
       <section className='home-header'>
         <div className='container'> 
           <div className='home-header-text'>
             <h1>Welcome to MathBuddy 👋</h1>
             <p className="tagline">A friendly space to explore numbers with fun visuals and games!</p>
+
+            {/* Routing using React Router */}
             <Link to="/learn" className="home-btn">Start Learning ➕➖</Link>
           </div>
           <div className='home-header-image'>
@@ -16,7 +19,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
 
       {/* Play Games Section */}
       <section className='play-games'>
@@ -27,6 +29,8 @@ export default function Home() {
           <div className='home-header-text'>
             <h1>Play Fun Math Games 🎲</h1>
             <p className="tagline">Sharpen your skills with exciting and interactive math challenges.</p>
+
+            {/* Routing using React Router */}
             <Link to="/play" className="home-btn">Play Games 🎲</Link>
           </div>
         </div>
@@ -38,6 +42,8 @@ export default function Home() {
           <div className='home-header-text'>
             <h1>Test Your Knowledge 🧠</h1>
             <p className="tagline">Challenge yourself with quick quizzes and see how much you’ve learned!</p>
+
+            {/* Routing using React Router */}
             <Link to="/quiz" className="home-btn">Take a Quiz 🧠</Link>
           </div>
           <div className='home-header-image'>
