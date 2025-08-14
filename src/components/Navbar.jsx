@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="logo">MathBuddy</div>
+      <Link to="/" className="logo">MathBuddy</Link>
 
       {/* Hamburger Icon */}
       <div
