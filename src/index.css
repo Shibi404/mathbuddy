@@ -1,27 +1,32 @@
 :root {
-  /* Backgrounds */
-  --bg-light: #f0f9ff;
-  --bg-main: #d0f0ff;
-  --bg-accent: #e3fcec;
+  /* Backgrounds (use different ones for each section) */
+  --bg-light: #fffae3;  /* Soft creamy yellow */
+  --bg-main: #ffdde1;   /* Light candy pink */
+  --bg-accent: #d4f6ff; /* Baby blue */
+  --bg-fun1: #c1ffd7;   /* Mint green */
+  --bg-fun2: #fff3c4;   /* Pastel banana */
+  --bg-fun3: #ffd6ff;   /* Cotton candy pink */
 
   /* Primary colors */
-  --primary: #3b82f6;        /* Blue-500 */
-  --primary-dark: #2563eb;   /* Blue-600 */
-  --primary-light: #93c5fd;
+  --primary: #ff6f61;       /* Lollipop coral */
+  --primary-dark: #e63946;  /* Watermelon red */
+  --primary-light: #ffa69e; /* Peachy pink */
 
   /* Accent colors */
-  --accent-green: #34d399;   /* Green-400 */
-  --accent-yellow: #facc15;  /* Yellow-400 */
-  --accent-red: #f87171;     /* Red-400 */
+  --accent-green: #00c853;  /* Fresh lime green */
+  --accent-yellow: #ffeb3b; /* Bright sunshine */
+  --accent-red: #ff1744;    /* Candy apple red */
+  --accent-blue: #2979ff;   /* Sky blue */
+  --accent-purple: #d500f9; /* Grape purple */
 
   /* Neutrals */
-  --text-main: #1e293b;      /* Slate-800 */
-  --text-light: #64748b;     /* Slate-500 */
+  --text-main: #2b2d42;     /* Deep navy for contrast */
+  --text-light: #6c757d;    /* Soft gray */
   --white: #ffffff;
 
   /* Border and shadows */
-  --border: #e2e8f0;         /* Gray-200 */
-  --shadow: rgba(0, 0, 0, 0.1);
+  --border: rgba(0, 0, 0, 0.05);
+  --shadow: rgba(0, 0, 0, 0.2);
 }
 
 /* Reset & Global Setup */
@@ -42,7 +47,11 @@ html, body {
   height: 100%;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
-  background-color: var(--bg-light);
   color: var(--text-main);
   font-family: 'Nunito', sans-serif;  
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }

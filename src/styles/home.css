@@ -1,39 +1,123 @@
-.home {
-  padding: 2rem;
-  text-align: center;
-}
-
 h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   color: var(--primary-dark, #2563eb);
-  margin-bottom: 0.5rem;
+  padding: 1rem 0rem;
 }
 
 .tagline {
   font-size: 1.2rem;
   color: var(--text-light, #64748b);
-  margin-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
-.home-buttons {
+.home-header .container,
+.play-games .container,
+.take-quiz .container {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  align-items: center;
+  justify-content: center;
+  padding: 100px 30px;
+  gap: 50px;
+}
+
+.home-header-image {
+  width: 30%;
+}
+
+.home-header-image img {
+  max-width: 100%;
+  animation: float 6s ease-in-out infinite;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
 }
 
 .home-btn {
-  background-color: var(--accent-green, #34d399);
-  color: var(--text-main, #1e293b);
+  background: linear-gradient(135deg, var(--accent-yellow), var(--accent-pink, #ff80ab), var(--accent-purple));
+  color: var(--white);
   text-decoration: none;
-  font-weight: 600;
-  padding: 1rem 2rem;
-  border-radius: 12px;
-  transition: background-color 0.3s ease;
-  width: 220px;
-  text-align: center;
+  font-weight: 800;
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  border: 4px solid var(--white);
+  box-shadow: 0 6px 0 var(--accent-red);
+  display: inline-block;
+  transition: all 0.25s ease;
+  cursor: pointer;
 }
 
 .home-btn:hover {
-  background-color: var(--accent-hover, #6ee7b7);
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 10px 0 var(--accent-red), 0 0 15px var(--accent-purple);
+}
+
+.home-btn:active {
+  transform: translateY(2px) scale(0.98);
+  box-shadow: 0 3px 0 var(--accent-red);
+}
+
+.play-games {
+  background-color: var(--bg-accent);
+} 
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .tagline {
+  font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .home-header .container,
+  .play-games .container,
+  .take-quiz .container {
+    flex-direction: column;
+    padding: 60px 30px;
+    align-items: center;
+  }
+
+  .home-header-text {
+    text-align: center;
+  }
+
+  .home-header-image {
+    width: 50%;
+  }
+
+}
+
+@media (max-width: 786px) {
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .tagline {
+  font-size: 0.9rem;
+  }
+
+  .home-header-image {
+    width: 80%;
+  }
+
+  .home-header .container,
+  .play-games .container,
+  .take-quiz .container {
+    padding: 60px 15px;
+  }
 }
