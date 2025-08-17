@@ -1,0 +1,145 @@
+.content-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+}
+
+.title {
+  color: var(--primary-dark, #2563eb);
+  padding: 20px 0px;
+}
+
+.content-text-bullet {
+  padding: 10px 0px;
+}
+
+.text {
+  font-size: 18px;
+}
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.btn-container {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-container p {
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 992px) {
+  .content-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+
+
+.info-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  text-align: center;
+  background-color: var(--bg-accent);
+  border-radius: 12px;
+}
+
+.info-title {
+  color: var(--primary-dark, #2563eb);
+  margin-bottom: 20px;
+}
+
+.info-text {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.info-list {
+  text-align: left;
+  margin: 0 auto 20px;
+  max-width: 500px;
+  line-height: 1.6;
+  list-style: none;
+}
+
+.info-highlight {
+  font-size: 18px;
+  color: var(--primary-dark, #2563eb);
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+
+.demo-container {
+  text-align: center;
+  padding: 30px;
+  background-color: var(--bg-accent);
+}
+
+.demo-title {
+  color: var(--primary-dark, #2563eb);
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.demo-subtitle {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+.step-box {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  overflow: hidden;
+}
+
+.step-box:hover {
+  transform: scale(1.05);
+}
+
+.step-number {
+  color: var(--primary-dark, #2563eb);
+  padding: 10px 0;
+}
+
+.step-img {
+  width: 100%;
+  height: auto;
+}
+
+.demo-tip {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--primary-dark, #2563eb);
+}
+
+.btn {
+  margin-top: 20px;
+}

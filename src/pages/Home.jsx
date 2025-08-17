@@ -51,6 +51,22 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Play Games Section */}
+      <section className='good-habbit'>
+        <div className='container'> 
+          <div className='home-header-image'>
+            <img src="/boy-washing-hands.webp" alt="Math games illustration" />
+          </div>
+          <div className='home-header-text'>
+            <h1>Clean Hands 🧼</h1>
+            <p className="tagline">Washing hands removes dirt and germs that we cannot see. It helps us stay healthy and prevents the spread of diseases</p>
+
+            {/* Routing using React Router */}
+            <Link to="/clean-hands" className="home-btn">Clean Hands 🧼</Link>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

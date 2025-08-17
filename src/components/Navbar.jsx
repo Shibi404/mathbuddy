@@ -33,6 +33,7 @@ export default function Navbar() {
         <Link to="/play" onClick={() => setIsOpen(false)}>Play</Link>
         <Link to="/quiz" onClick={() => setIsOpen(false)}>Quiz</Link>
         <Link to="/video" onClick={() => setIsOpen(false)}>Videos</Link>
+        <Link to="/clean-hands" onClick={() => setIsOpen(false)}>New Habbit</Link>
       </div>
     </nav>
   );

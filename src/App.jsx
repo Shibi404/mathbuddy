@@ -5,6 +5,7 @@ import Learn from './pages/Learn'
 import Play from './pages/Play'
 import Quiz from './pages/Quiz'
 import Video from './pages/Video'
+import CleanHands from './pages/CleanHands'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/play" element={<Play />} />
         <Route path="/quiz" element={<Quiz />} />
         <Route path="/video" element={<Video />} />
+        <Route path="/clean-hands" element={<CleanHands />} />
       </Routes>
     </Router>
   );
