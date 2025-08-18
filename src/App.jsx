@@ -6,6 +6,7 @@ import Play from './pages/Play'
 import Quiz from './pages/Quiz'
 import Video from './pages/Video'
 import CleanHands from './pages/CleanHands'
+import Info from './pages/Info'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/quiz" element={<Quiz />} />
         <Route path="/video" element={<Video />} />
         <Route path="/clean-hands" element={<CleanHands />} />
+        <Route path="/info" element={<Info />} />
       </Routes>
     </Router>
   );

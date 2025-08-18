@@ -29,6 +29,7 @@ export default function Navbar() {
       {/* Nav Links - State Management + Routing */}
       <div className={`nav-links ${isOpen ? 'open' : ''}`}>
         <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
+        <Link to="/info" onClick={() => setIsOpen(false)}>Info</Link>
         <Link to="/learn" onClick={() => setIsOpen(false)}>Learn</Link>
         <Link to="/play" onClick={() => setIsOpen(false)}>Play</Link>
         <Link to="/quiz" onClick={() => setIsOpen(false)}>Quiz</Link>
